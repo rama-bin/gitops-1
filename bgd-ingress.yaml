@@ -2,6 +2,8 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: bgd-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
   labels:
     app: bgd
 spec:
